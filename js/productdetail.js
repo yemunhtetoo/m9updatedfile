@@ -46,10 +46,11 @@ $(document).ready(function(){
     else {
       $(".filtersmx").not("."+value).hide("1000");
       $(".filtersmx").filter("."+value).show("1000");
+      
     }
 
       // $("ul .buttonselectionforsmxsize").click(function(){
-        $(this).addClass('active').siblings().removeClass('active');
+        // $(this).addClass('active').siblings().removeClass('active');
       // })
     let color_wrap = $('ul>li.buttonselectionforsmxsize[data-filter="'+value+'"] ');
 

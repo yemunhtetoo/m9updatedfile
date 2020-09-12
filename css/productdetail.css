@@ -688,6 +688,9 @@ dl, ol, ul {
 }
 
 @media (max-width: 600px) {
+	.thumb[style*='display: block']{
+    display: flex !important;
+	}
 	.active {
 		display: inline-block;
 	} 
@@ -832,6 +835,7 @@ a {
 		padding-left: 54%;
 	}
 }
+
 
 @media (min-width: 1001px) and (max-width: 1025px) {
 	.set_boom .color_wrap {
