@@ -4,17 +4,6 @@ $(document).ready(function(){
 		$('.imgBox img').attr("src", $(this).attr("href"));
 	});
 
-    $('.thumb2 a').click(function(e){
-    e.preventDefault();
-    $('.imgBox2 img').attr("src", $(this).attr("href"));
-  });
-
-    $('.thumb3 a').click(function(e){
-    e.preventDefault();
-    $('.imgBox3 img').attr("src", $(this).attr("href"));
-  });
-
-
 	$(".color_wrap ul li").each(function(item){
 		var color = $(this).attr("data-color");
 		$(this).css("backgroundColor", color);
