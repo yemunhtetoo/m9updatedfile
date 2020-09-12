@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Terms</title>
+	  <meta charset="utf-8">
+  	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  	  <!-- checkout page css -->
+  	    <link rel="stylesheet" type="text/css" href="css/loginpage.css">
+</head>
+<body>
+	<header class="one-header">
+		<div class="header-inner">
+			<div  class="logo">
+				<h1>
+					<img src="images/alphareal.png">
+				</h1>
+			</div>
+		</div>
+	</header>
+
+	<main class="one-main ng-scope">
+		<div class="main-inner">
+			<div class="container loginForm">
+				<div class="title">
+					<h1>Create your Samsung Account</h1>
+				</div>
+
+				<div class="content">
+					<div class="one-forms-login termsform">
+						<form action="register.html">
+							<fieldset>
+
+								
+								<div class="one-checkBox mbr_rememberid">
+									<div class="round">
+										<label for="checkbox1"></label>
+									    <input type="checkbox" id="checkbox1" />
+									    <label for="checkbox1"></label>
+									    <span>Terms and Conditions</span>
+									  </div>
+								</div>
+
+
+								<span class="more_btn">
+									<a href="#">Details</a>
+								</span>
+
+								<div class="one-checkBox mbr_rememberid">
+									<div class="round">
+										<label for="checkbox2"></label>
+									    <input type="checkbox" id="checkbox2" />
+									    <label for="checkbox2"></label>
+									    <span>Special terms
+									</span>
+									  </div>
+								</div>
+
+								
+								<span class="more_btn">
+									<a href="#">Details</a>
+								</span>
+
+								<div class="one-checkBox mbr_rememberid">
+									<div class="round">
+										<label for="checkbox3"></label>
+									    <input type="checkbox" id="checkbox3" />
+									    <label for="checkbox3"></label>
+									    <span>Samsung Privacy Policy</span>
+									  </div>
+								</div>
+
+								
+								<span class="more_btn">
+									<a href="#">Details</a>
+								</span>
+
+								<div class="one-checkBox mbr_rememberid">
+									<div class="round">
+										<label for="checkbox4"></label>
+									    <input type="checkbox" id="checkbox4" />
+									   <label for="checkbox4"></label>
+									    <span>Get news and special offers (optional)</span>
+									  </div>
+								</div>
+
+								
+								<span class="more_btn">
+									<a href="#">Details</a>
+								</span>
+
+								<div class="bar">
+									<hr>
+								</div>
+
+								<div class="one-checkBox mbr_rememberid">
+									<div class="round allmainchk">
+										<label for="checkbox5"></label>
+									    <input type="checkbox" onclick="toggle(this);" id="checkbox5" />
+									   <label for="checkbox5"></label>
+									    <span>I have read and agree to all of the above.</span>
+									  </div>
+								</div>
+
+								<div class="mbr_signin mt-5">
+									<div class="one-btn-container">
+									<a href="register.html"><button class="one-primary one-button">
+										Agree
+									</button></a>
+									</div>
+
+									
+								</div>
+
+							
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="one-footer">
+		<div class="footer-inner">
+			<div class="footer-logo">
+				<img src="images/alphareal.png">
+			</div>
+			<address class="footer-address">
+				Copyright © 1995-2020 SAMSUNG All Rights Reserved.
+			</address>
+
+			<div class="footer-links">
+				<a href="#">Terms and Conditions</a>
+				<a href="#">Samsung Privacy Policy</a>
+				<a href="#">Notice</a>
+				<a href="#">Contact us</a>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript">
+		function toggle(source) {
+    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i] != source)
+            checkboxes[i].checked = source.checked;
+    }
+}
+	</script>
+</body>
+</html>

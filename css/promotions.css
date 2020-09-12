@@ -1,0 +1,411 @@
+body {
+	overflow-x: hidden;
+}
+
+.fa
+{
+  font-size:30px !important;
+  cursor:pointer;
+}
+.checked
+{
+  content: '\f004';
+  color:red;
+}
+.unchecked
+{
+  color:black;
+}
+
+.slick-dotted.slick-slider {
+  margin-top: 50px;
+}
+
+a {
+	text-decoration: none!important;
+}
+.slick-slide img {
+	width: 100%;
+}
+
+.slick-slide {
+	margin: 30px 15px;
+}
+
+.slider span.set_title {
+	position: relative;
+	top: 20px;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.filter-select-box {
+  position: relative;
+  text-align: right;
+  vertical-align: top;
+}
+
+.product_promo .size_color{
+  margin: 0px 0 25px;
+}
+
+.product_promo .size_color .title{
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #000;
+}
+
+.product_promo .color_wrap ul{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.product_promo .color_wrap ul li{
+  width: 22px;
+  height: 22px;
+  background: #000;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.product_promo .color_wrap ul li.active{
+  width: 30px;
+  height: 30px;
+}
+
+.product_promo .size_color{
+  margin: 0px 0 25px;
+}
+
+.product_promo .price{
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.promo_card_btn {
+  margin-bottom: 15%;
+  margin-top: 15px;
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+  text-align: center;
+  padding-bottom: 20%;
+}
+
+#like_id_bya label {
+	color: #fff;
+	background-color: #fff;
+}
+#like_id_bya:not(:checked) > label {
+  cursor:pointer;
+  float: right;
+  width: 30px;
+  height: 30px;
+  display: block;
+  
+  color: rgba(255,255,255,255);
+  line-height: 33px;
+  text-align: center;
+}
+#like_id_bya:not(:checked) > label:hover,
+#like_id_bya:not(:checked) > label:hover ~ label {
+  color: rgba(233, 54, 40, .6);
+}
+#like_id_bya > input:checked + label:hover,
+#like_id_bya > input:checked + label:hover ~ label,
+#like_id_bya > input:checked ~ label:hover,
+#like_id_bya > input:checked ~ label:hover ~ label,
+#like_id_bya > label:hover ~ input:checked ~ label {
+  color: rgba(233, 54, 40, .8);
+}
+#like_id_bya > input:checked ~ label {
+  color: rgb(233, 54, 40);
+}
+
+.set_rate {
+	color: #000;
+}
+.product-card__cta-multi:before, .product-card__cta-multi:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.product_heart_ratin {
+	position: relative;
+	text-align: right;
+	padding: 20px 20px 20px 0;
+}
+
+.promo_pagination {
+  display: inline-block;
+  float: right;
+}
+
+.promo_pagination a {
+  color: black;
+  float: left;
+  padding: 4px 8px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.promo_pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.promo_pagination a:hover:not(.active) {background-color: #ddd;}
+
+.promo_card_btn .product_btn_one {
+  width: 48.7805%;
+  display:inline-block;overflow:hidden;height:40px;height:2.77778vw;padding:7px 16px;padding:0.48611vw 1.11111vw;-webkit-box-sizing:border-box;box-sizing:border-box;font-size:12px;font-size:0.83333vw;line-height:1.08;letter-spacing:0.075em;white-space:normal;border: 1px solid #000;font-weight: bold;
+}
+
+@media (max-width: 600px) {
+	.promo_card_btn .product_btn_one {
+		display: inline;	
+		font-size: 16px;
+		padding: 5px 5px 10px;
+	}
+}
+
+.promo_card_btn .product_btn_one:last-child {
+  border-color: #1428a0;
+  background: #1428a0;
+  color: #fff;
+}
+
+.product_btn_one:before {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  content: '';
+}
+
+.promo_card_btn .product_btn_one span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.rating_fun {
+	position: relative;
+	text-align: right;
+	padding: 20px;
+	direction: rtl;
+}
+
+.rating_fun input {
+  position: absolute;
+  width: 35px;
+  height: 50px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 5;
+}
+
+.rating_fun input:checked ~ .star:after, .rating_fun input:hover ~ .star:after {
+  content: '\f004';
+}
+
+.product_promo .price p {
+	display: inline;
+	vertical-align: middle;
+	padding: 0px 5px;
+}
+
+.product_promo .price .discound_price {
+	font-size: 18px;
+	color: #000;
+}
+
+.set_bg_color_for_promo {
+	background-color: #eee;
+}
+
+.product_promo .price .normal_price {
+	font-size: 14px;
+	color: #ddd;
+}
+
+.product_promo .price .normal_price del {
+	position: relative;
+	top: 7px;
+}
+
+.product_promo .price .percent_off {
+	font-size: 14px;
+	color: red;
+}
+
+.rating_fun .star { 
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 22px;
+  color: #1428a0;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.rating_fun .star:after {
+  content: '\f08a';
+}
+.rating_fun .star:hover ~ .star:after, .rating_fun .star:hover:after {
+  content: '\f004';
+}
+/*.rating {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 150px;
+  height: 30px;
+  padding: 5px 10px;
+  margin: auto;
+  border-radius: 30px;
+  background: #FFF;
+  display: block;
+  overflow: hidden;
+  
+  box-shadow: 0 1px #CCC,
+              0 5px #DDD,
+              0 9px 6px -3px #999;
+  
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating:not(:checked) > input {
+  display: none;
+}
+
+#like:not(:checked) > label {
+  cursor:pointer;
+  float: right;
+  width: 30px;
+  height: 30px;
+  display: block;
+  
+  color: rgba(233, 54, 40, .4);
+  line-height: 33px;
+  text-align: center;
+}
+#like:not(:checked) > label:hover,
+#like:not(:checked) > label:hover ~ label {
+  color: rgba(233, 54, 40, .6);
+}
+#like > input:checked + label:hover,
+#like > input:checked + label:hover ~ label,
+#like > input:checked ~ label:hover,
+#like > input:checked ~ label:hover ~ label,
+#like > label:hover ~ input:checked ~ label {
+  color: rgba(233, 54, 40, .8);
+}
+#like > input:checked ~ label {
+  color: rgb(233, 54, 40);
+}*/
+	
+.product-card__divider {
+  padding-bottom: 1.11111vw;
+  border-top: 1px solid #dadada;
+}
+
+.product_promo .size_color .title{
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #000;
+}
+
+.product_promo{background: #fff;display:block;position:relative;-webkit-box-sizing:border-box;box-sizing:border-box;background-color:#fff;vertical-align:top;-webkit-box-shadow:0 2px 6px 0 rgba(0,0,0,0.1);box-shadow:0 2px 6px 0 rgba(0,0,0,0.1)}
+
+.product_promo .img img{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+
+.filter_text_on {
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+  float: right;
+  position: relative;
+  top: 5px;
+}
+.filter-select-box .js-my-select {
+  background-color: #eee;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  position: relative;
+  top: -3px;
+  font-weight: bold;
+}
+
+.nice-select:after {
+  width: 10px!important;
+  height: 10px!important;
+}
+
+.slider span.set_title a {
+	color: #000;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.slick-initialized .slick-slide {
+	text-align: center;
+}
+.title_promo {
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	margin: 50px auto;
+}
+.slick-dots li button::before,
+.slick-dots li.slick-active button::before {
+	color: #fff;
+}
+
+.slick-dots li button::before {
+	font-size: 15px;
+}
+
+.slick-dots li button::before, .slick-dots li.slick-active button::before {
+	color: #000;
+}
+
+.slick-next {
+	display: none!important;
+}
+
+@media (max-width: 600px) {
+  .filter_text_on {
+    top: 0;
+  }
+  .filter-select-box .js-my-select {
+    top: 0;
+  }
+  .filter-select-box .js-my-select {
+    float: left;
+    text-align: left;
+  }
+  .filter_text_on {
+    display: none;  
+  }
+}

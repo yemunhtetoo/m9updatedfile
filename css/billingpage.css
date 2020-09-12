@@ -1,0 +1,654 @@
+@font-face {
+	font-family: SamsungSans;
+	src: url(SamsungSans-Regular.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: SamsungSans;
+}
+
+a {
+	text-decoration: none!important;
+}
+body {
+	  font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+@media (max-width: 600px) {
+	.col-md-2-5, .col-md-6-5 {
+	flex: 0 0 20%;
+	max-width: 20%;
+	}
+	.col-md-2-5:first-child {
+		padding-left: 15px;
+	}
+}
+ 
+@media (min-width: 1025px) {
+	.col-custom-1 {
+		flex: 0 0 5%;
+		max-width: 5%;
+	}
+	.col-custom-11 {
+		flex: 0 0 95%;
+		max-width: 95%;
+	}
+}
+
+@media (min-width: 1025px) {
+	.col-md-2-5 {
+	flex: 0 0 7%;
+	max-width: 7%;
+	}
+	.col-md-2-5:first-child {
+		padding-left: 15px;
+	}
+
+	.col-md-6-5 {
+		flex: 0 0 72%;
+		max-width: 72%;
+	}
+}
+.col-custom-1, .col-custom-11, .col-md-2-5, .col-md-6-5 {
+	position: relative;
+	width: 100%;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.cart_1 {
+	max-width: 1140px;
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	
+}
+.cart_title span {
+	background-color: #000;
+	border: 2px solid #000;
+	color: #fff;
+}
+
+.cart_title span img {
+	width: 20px;
+	height: 20px;
+}
+
+.cart_title span{
+	display:inline-block;
+	width:40px;
+	height:40px;
+	font-size:20px;
+	font-family:SamsungOne600,'Open Sans',Helvetica,Arial,sans-serif;
+	line-height:36px;
+	text-align:center;
+	vertical-align:top;
+	border-radius:50%;
+	margin-right:12px;
+	border:2px solid}
+
+table { 
+	border-collapse: collapse; 
+	width: 1140px;
+}
+
+.rm-pdn {
+	padding: 0!important;
+}
+
+.set_coupon_code {
+	text-align: left;
+	float: left;
+}
+
+.set_update_btn {
+	float: right;
+	margin-top: 10px;
+}
+
+.qty {
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	padding: 20px 0px;
+	margin: 0;
+	display: inline-block;
+	width: 120px;
+	text-align: center;
+	margin: 0 30px;
+}
+
+td.qty {
+	padding: 0;
+} 
+
+.qty .count {
+    color: #000;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 0 2px;
+    min-width: 35px;
+    text-align: center;
+}
+.qty .plus {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    width: 30px;
+    height: 30px;
+    font: 30px/1 Arial,sans-serif;
+    text-align: center;
+    border-radius: 50%;
+    }
+.qty .minus {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    width: 30px;
+    height: 30px;
+    font: 30px/1 Arial,sans-serif;
+    text-align: center;
+    border-radius: 50%;
+    background-clip: padding-box;
+}
+.minus:hover{
+    background-color: #717fe0 !important;
+}
+.plus:hover{
+    background-color: #717fe0 !important;
+}
+
+.set_btn_check {
+	font-size: 12px;
+	padding-left: 25px;
+}
+
+th .set_device_title {
+	text-align: left;
+	float: left;
+	width: 200px;
+	position: relative;
+	left: 50px;
+}
+
+.set_second_cart th {
+	border-bottom: 1px solid #eee;
+}
+.checkselect {
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+  left: 100px;
+  top: -50px;
+}
+
+td .chkbox-section {
+	padding: 100px 0 200px;
+}	
+
+.set_cart_total {
+	position: relative;
+	margin-top: -38%;
+	margin-left: 55%;
+}
+
+.set_cart_total h4 {
+	position: absolute;
+	font-weight: bold;
+}
+
+.set_methods_image {
+	width: 200px;
+}
+
+.set_img_payment {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	text-align: center;
+}
+.set_img_payment img {
+	width: 50px;
+	height: 50px;
+}
+
+.set_payment_method {
+	position: relative;
+	margin-top: 41%;
+	margin-bottom: 50px;
+}
+
+.checkselect input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+/* On mouse-over, add a grey background color */
+.checkselect:hover input ~ .checkmark {
+  background-color: #fff;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkselect input:checked ~ .checkmark {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.set_update_cart {
+	position: absolute;
+	top: 340px;
+}
+
+/* Show the checkmark when checked */
+.checkselect input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkselect .checkmark:after {
+  left: 9px;
+  top: 7px;
+  width: 5px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.set_cart_total table {
+	position: absolute;
+	top: 50px;
+	width: 100%;
+}
+
+.set_font_small {
+	font-size: 14px;
+}
+
+.set_cart_total th {
+	border-right: 0;
+}
+
+.set_cart_total td {
+	border-left: 0;
+}
+
+#content {
+	margin-top: 100px;
+	overflow-x: hidden;
+}
+.set_device_title span {
+	text-transform: capitalize!important;
+}
+
+a.btn_cart_styl:hover {
+	color: #fff;
+}
+th .set_deliver_form_input {
+	display: inherit;
+	width: 300px;
+}
+
+a.set_btn_check, a.set_btn_check:hover {
+	color: #000!important;
+	text-decoration: none!important;
+}
+
+/*Prevent text selection*/
+.qty span{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.qty input{  
+    border: 0;
+    width: 2%;
+}
+.qty input::-webkit-outer-spin-button,
+.qty input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.bg-dark {
+	background-color: #343a40!important;
+}
+.qty input:disabled{
+    background-color:white;
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #fff; 
+	}
+
+.set_remov_wh img {
+	width: 20px;
+	height: 20px;
+	text-align: center;
+}
+th { 
+	background: #fff; 
+	color: #000; 
+	font-weight: bold; 
+	}
+
+td:first-child {
+	top: 0px;
+}
+td, th { 
+	border: 1px solid #ccc; 
+	text-align: center; 
+	font-size: 18px;
+	vertical-align: middle;
+	padding: 20px;
+	}
+
+.set_coupon_code input {
+	padding: 9px 5px;
+	outline: none;
+	font-size: 13px;
+	border: 1px solid #ddd;
+}
+
+.set_deliver_form_input img {
+	width: 20px;
+	height: 20px;
+}
+
+.set_deliver_form_input input {
+	border:none;
+	font-size: 12px;
+	outline: none;
+	border-right: 1px solid #ddd;
+}
+
+.set_deliver_form_input {
+	border-radius: 3px;
+	border: 1px solid #ddd;
+	padding: 13px 5px;
+}
+
+.set_device_title {
+	font-size: 22px;
+	font-weight: 500;
+	margin: 15px 0px;
+}
+
+.rm-pdn span {
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.btn_cart_styl {
+	padding: 13px 10px;
+	border: none;
+	background-color: #000;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+	border-radius: 6px;
+}
+
+th {
+	text-align: center!important;
+}
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+	
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	table { 
+	  	width: 100%; 
+	}
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		
+	}
+	
+	td:first-child {
+		padding-top: 0;
+	}
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding: 20px;
+	}
+
+	th,td {
+		
+		vertical-align: middle;
+	}
+	th {
+		border: none;
+		
+	}
+	thead {
+		display: none;
+	}
+
+	td:last-child {
+		border: none;
+		margin-bottom: 20px;
+	}
+	.set_coupon_code {
+		text-align: center;
+		width: 100%;
+	}
+	.btn_cart_styl {
+		width: auto;
+	}
+	.set_update_btn {
+		float: none;
+		position: relative;
+		top: 20px;
+	}
+
+	.set_update_btn .btn_cart_styl {
+		width: auto;
+	}
+}
+
+.onlyshow_inphone {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.col-custom-1, .col-custom-11, .col-md-2-5, .col-md-6-5 {
+		text-align: center;
+	}
+	.onlyshow_inphone {
+		display: block;
+	}
+	.phone_mgn {
+		margin-bottom: 30px;
+		display: block;
+	}
+/*	.set_second_cart thead {
+		display: block;
+	}
+	.set_second_cart th {
+		border: none;
+	}
+	.set_cart_total table {
+		position: relative;
+	}
+	.set_cart_total {
+		margin-top: 0;
+		margin-left: 0;
+
+	}
+	th .set_device_title {
+		float: none;
+	}
+	th .set_deliver_form_input {
+		display: inline-block;
+		width: 100%;
+		position: relative;
+		left: 50px;
+	}
+	.set_cart_total h4 {
+		position: relative;
+	}
+	.set_update_cart {
+		position: relative;
+		top: 0;
+	}
+	.set_cart_total table {
+		top: 0;
+	}
+	.checkselect {
+		top: 100px;
+	}
+	td .chkbox-section {
+		padding: 80px 0 130px;
+	}*/
+}
+
+@media (max-width: 1024px) {
+	.rm-pdn {
+		text-align: center;
+	}
+	.set_second_cart thead {
+		display: block;
+	}
+	.set_second_cart thead tr {
+		position: relative;
+	}
+	th .set_device_title {
+		text-align: center;
+		width: 100%;
+		left: 0;
+	}
+	th .set_deliver_form_input {
+		display: initial;
+		width: 100%;
+	}
+	td .chkbox-section {
+		padding: 0;
+		padding-top: 30px;
+		display: inline-block;
+		text-align: center;
+	}
+	.checkselect {
+		margin-bottom: 0;
+		left: 0;
+		top: 0;
+		text-align: center;
+	}
+	.set_cart_total {
+		margin-top: 0;
+		margin-left: 0;
+	}
+	.set_cart_total h4, .set_cart_total table, .set_update_cart {
+		position: relative;
+	}
+	.set_cart_total table, .set_update_cart {
+		top: 0;
+	}
+	.set_payment_method {
+		margin-top: 30px;
+		text-align: center;
+	}
+	.col-md-2-5 {
+		flex: 0 0 200px;
+		max-width: 200px;
+		display: inline;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.col-md-6-5 {
+		flex: 0;
+		max-width: 0;
+	}
+
+	.left-side {
+		text-align: center;
+		
+	}
+	.hide-side-for-small-side {
+		display: none;
+	} 
+	.set_ph_size_deli {
+		display: inline;
+		padding: 10px;
+		margin: 10px;
+		text-align: center;
+	}
+	.set_ph_size_deli img {
+		width: 100px;
+		height: 100px;
+		border: 1px solid #ddd;
+	}
+	.show-side-in-small-side {
+		display: block!important;
+		position: relative;
+		text-align: center;
+	}
+}
+
+.show-side-in-small-side {
+	display: none;
+}
+
+@media (max-width: 600px) {
+	.set_ph_size_deli {
+		display: block!important;
+	}
+}
