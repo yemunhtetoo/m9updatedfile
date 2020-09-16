@@ -389,6 +389,7 @@ a.set_btn_check, a.set_btn_check:hover {
 
 .namaenotypeto span {
 	padding: 0;
+	float: left;
 }
 
 .choose_price_section {
@@ -844,5 +845,11 @@ a {
 	}
 	.product_item .color_wrap ul {
 		left: 42%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.choose_price_section {
+		display: inline-block!important;
 	}
 }
