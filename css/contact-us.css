@@ -1,0 +1,143 @@
+@font-face {
+	font-family: SamsungSans;
+	src: url(SamsungSans-Regular.ttf);
+}
+
+@font-face{font-family:'samsungIcon';src:url(../fonts/samsungIcon.eot);src:url(../fonts/samsungIcon.eot?#iefix) format("embedded-opentype"),url(../fonts/samsungIcon.woff) format("woff");font-weight:normal;font-style:normal}
+
+#content_contact_us {
+	margin-top: 80px;
+}
+
+* {
+	font-family: SamsungSans;
+}
+
+.support-container .header-support {
+	position: relative;
+}
+
+.support-container .header-support .header-content {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	width: 70%;
+}
+
+.support-container .header-support .header-content .header-title {
+	font-weight: normal;
+	font-size: 42px;
+	line-height: 40px;
+	letter-spacing: -1px;
+	color: #fff;
+}
+
+.support-container .header-support .responsive-image {
+	width: 100%;
+}
+
+.support-container .contact-information {
+	clear: both;
+	overflow: hidden;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 100px;
+}
+
+.support-container .contact-information > div {
+	float: left;
+	width: 23%;
+	margin: 20px 0 20px 2%;
+}
+
+.support-container .contact-information .main-title {
+	margin-bottom: 10px;
+	font-size: 32px;
+	font-weight: normal;
+	color: #292929;
+}
+
+.support-container .contact-information-module h2+.support-item {
+	padding-top: 0;
+}
+
+.support-container .contact-information-module .support-item {
+	clear: both;
+	position: relative;
+	padding: 10px 0 10px 50px;
+}
+
+.support-container .contact-information-module .support-item .icon-live-chat, .support-container .contact-information-module .support-item .icon-social-email, .support-container .contact-information-module .support-item .icon-phone {
+	position: absolute;
+	left: 0;
+	font-size: 32px;
+}
+
+.support-container [class*="icon-"]{font-family:'samsungIcon';font-style:normal;font-weight:normal;line-height:1;-webkit-font-smoothing:antialiased;speak:none;font-variant:normal;text-transform:none;}
+.icon-live-chat:before{content:'\e00e';}
+
+.support-container .contact-information-module .support-item h3 {font-weight: normal; font-size: 18px}
+
+.support-container .contact-information-module .support-item>p {
+	width: 90%;
+}
+
+.support-container .contact-information-module .support-item a {
+	font-size: 17px;
+	color: #0071bf;
+}
+
+.support-container .contact-information-module.product-assistance p .icon-link-play {
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 1px; 
+}
+
+.icon-link-play:before{content:'\34';}
+.icon-social-email:before{content:'\76';}
+.icon-phone:before{content:'\65';}
+
+.support-item .img-w img {
+	width: 100%;
+}
+
+.support-item .call {
+	padding: 8% 0;
+}
+
+.support-item .call .txt {
+	display: block;
+	padding-left: 37px;
+}
+
+.support-item .call .lav1 {
+	padding-bottom: 5px;
+	background: url(../images/ic_call_2.png) no-repeat 0 3px;
+	color: #0071bf;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.support-item .call+.call {
+	border-top: 1px solid #dadada;
+}
+
+.support-item .com-text {
+	display: block;
+	padding: 12px 20px 11px;
+	background: #dadada;
+	text-align: center;
+	font-size: 14px;
+	color: #000;
+}
+
+.support-container .contact-information-module.more-help .support-item {
+	padding-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+	.support-container .contact-information > div {
+		width: 90%;
+	}
+}
+
